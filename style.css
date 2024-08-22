@@ -6,6 +6,17 @@
     --cor3:#8C3503;
     --cor4:#592202;
 }
+@keyframes fundo {
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -13,14 +24,12 @@
 }
 html,body{
     color: var(--cor2);
-    height: 100vh;
-    width: 100vw;
 }
 body{
     /*background-image: url(imagewns/pexels-jplenio-1114897.jpg);*/
-    background-color: rgba(0, 0, 0, 0.658);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background:linear-gradient(45deg,lightgray, #08576b, #05262e);
+    background-size: 300%  300%;
+    animation: fundo 15s ease infinite;
 }
 header h1{
     text-align: center;
