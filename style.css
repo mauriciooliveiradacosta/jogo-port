@@ -6,6 +6,7 @@
     --cor2:#45C4B0 ;
     --cor3:#13678A;
     --cor4:#012030;
+    --shadow:2px 2px 4px rgba(0, 0, 0, 0.596);
 }
 @keyframes fundo {
     0%{
@@ -29,15 +30,15 @@ html,body{
 }
 body{
     /*background-image: url(imagewns/pexels-jplenio-1114897.jpg);*/
-    background:linear-gradient(45deg,#2c64dd, #497a86, #01ccff);
+    overflow: hidden;
+    background:linear-gradient(45deg,var(--cor1), var(--cor3), var(--cor4));
     background-size: 300%  300%;
     animation: fundo 6s ease infinite;
 }
 nav{
-    background-color:rgba(53, 121, 209, 0.753);
-    border-style: groove;
-    border-color: lightgray;
-    border-width: 4px;
+    background-color:var(--cor1);
+    border: 5px groove lightblue;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.671);
 }
 nav ol{
     list-style: none;
@@ -46,6 +47,8 @@ nav ol{
     justify-content: space-evenly;
 }
 nav ol li{
+    background-color: var(--cor4);
+    margin: 5px;
     padding: 10px;
 }
 nav ol a{
@@ -65,43 +68,51 @@ header h1{
 }
 form{
     width: 600px;
-    height: 300px;
+    height: 320px;
     margin: auto;
-    background-color: blue;
-    text-align: center;
+    background-color: rgb(22, 78, 197);
+    color: white;
     box-shadow: 3px 3px 6px  rgba(0, 0, 0, 0.301);
     border-radius: 10px 20px;
 
 }
-form legend{
-    color: white;
+form fieldset legend{
+    margin: 0px 10px 0px 10px;
+    font-size: 1.1em;
+    text-shadow: var(--shadow);
 }
-form input{
+form fieldset#info input{
     padding: 20px;
-    margin: 10px;
     border-radius: 20px;
     width: 150px;
 }
-form p.inline{
-    display: inline-block;
+form  fieldset#sexo{
+    padding: 5px;
 }
 form label{
-    display: block;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
+    text-shadow:var(--shadow) ;
 }
 form button{
     display: block;
     background: linear-gradient(45deg,var(--cor1),var(--cor3));
     color: white;
     border: none;
+    border-radius: 10px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.548);
     width:150px;
-    padding: 20px;
-    margin: 60px auto;
+    padding:10px;
+    margin:10px  auto;
     font-size: 1.3em;
 }
 form button:hover{
     transform: translate(2px,2px);
     transition:  0.8s;
+}
+footer{
+    text-align: center;
+    background-color: rgb(22, 78, 197);
+    margin-top: 10px;
+    width: auto;
+    height: 155px;
 }
