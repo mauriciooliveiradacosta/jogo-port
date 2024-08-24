@@ -1,10 +1,11 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
 :root{
-    --cor1: #D98E04;
-    --cor2: #BF6B04;
-    --cor3:#8C3503;
-    --cor4:#592202;
+    --cor0:#DAFDBA;
+    --cor1:#9AEBA3 ;
+    --cor2:#45C4B0 ;
+    --cor3:#13678A;
+    --cor4:#012030;
 }
 @keyframes fundo {
     0%{
@@ -28,26 +29,52 @@ html,body{
 }
 body{
     /*background-image: url(imagewns/pexels-jplenio-1114897.jpg);*/
-    background:linear-gradient(50deg,#1eb1d6, #497a86, #076981);
+    background:linear-gradient(45deg,#2c64dd, #497a86, #01ccff);
     background-size: 300%  300%;
-    animation: fundo 15s ease infinite;
+    animation: fundo 6s ease infinite;
+}
+nav{
+    background-color:rgba(53, 121, 209, 0.753);
+    border-style: groove;
+    border-color: lightgray;
+    border-width: 4px;
+}
+nav ol{
+    list-style: none;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-evenly;
+}
+nav ol li{
+    padding: 10px;
+}
+nav ol a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #00f7ff;
+}
+nav ol a:hover{
+    text-decoration: underline;
 }
 header h1{
     text-align: center;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.568);
     font-family: 'Matemasie' ,sans-serif, Courier New, Courier, monospace;
-    margin-bottom: 50px;
-    color: var(--cor1);
+    margin: 30px;
+    color: white;
 }
 form{
     width: 600px;
     height: 300px;
     margin: auto;
-    background-color: #BF6B04;
+    background-color: blue;
     text-align: center;
     box-shadow: 3px 3px 6px  rgba(0, 0, 0, 0.301);
     border-radius: 10px 20px;
 
+}
+form legend{
+    color: white;
 }
 form input{
     padding: 20px;
@@ -65,8 +92,16 @@ form label{
 }
 form button{
     display: block;
+    background: linear-gradient(45deg,var(--cor1),var(--cor3));
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.548);
     width:150px;
     padding: 20px;
     margin: 60px auto;
-    font-size: large;
+    font-size: 1.3em;
+}
+form button:hover{
+    transform: translate(2px,2px);
+    transition:  0.8s;
 }
