@@ -6,7 +6,13 @@
     --cor2:#45C4B0 ;
     --cor3:#13678A;
     --cor4:#012030;
+    --cor5:#009A00;
     --shadow:2px 2px 4px rgba(0, 0, 0, 0.596);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 @keyframes fundo {
     0%{
@@ -19,18 +25,8 @@
         background-position:0% 50%;
     }
 }
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-html,body{
-    height: 100vh;
-    width: 100vw;
-}
 body{
-    /*background-image: url(imagewns/pexels-jplenio-1114897.jpg);*/
-    overflow: hidden;
+    /*background-image: url(imagewns/pexels-jplenio-1114897.jpg);*/                
     background:linear-gradient(45deg,var(--cor1), var(--cor3), var(--cor4));
     background-size: 300%  300%;
     animation: fundo 6s ease infinite;
@@ -68,10 +64,9 @@ header h1{
 }
 form{
     width: 600px;
-    height: 320px;
+    height:auto;
     margin: auto;
     background-color: rgb(22, 78, 197);
-    color: white;
     box-shadow: 3px 3px 6px  rgba(0, 0, 0, 0.301);
     border-radius: 10px 20px;
 
@@ -79,18 +74,23 @@ form{
 form fieldset legend{
     margin: 0px 10px 0px 10px;
     font-size: 1.1em;
+    color: rgb(255, 255, 255);
     text-shadow: var(--shadow);
 }
 form fieldset#info input{
     padding: 20px;
+    border-style:solid ;
     border-radius: 20px;
-    width: 150px;
+    text-align: center;
+    font-size: 1.1em;
+    width: 200px;
 }
-form  fieldset#sexo{
-    padding: 5px;
+form  fieldset {
+    padding: 10px;
 }
 form label{
     color: white;
+    font-size: 1.1em;
     text-shadow:var(--shadow) ;
 }
 form button{
@@ -111,8 +111,10 @@ form button:hover{
 }
 footer{
     text-align: center;
+    font-size: 2em;
+    color: white;
     background-color: rgb(22, 78, 197);
-    margin-top: 10px;
-    width: auto;
-    height: 155px;
+    border-radius: 20px 20px  0px 0px;
+    margin-top: 50px;
+    height: 200px;
 }
