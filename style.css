@@ -67,6 +67,7 @@ form{
     height:auto;
     margin: auto;
     background-color: rgb(22, 78, 197);
+    color: var(--cor0);
     box-shadow: 3px 3px 6px  rgba(0, 0, 0, 0.301);
     border-radius: 10px 20px;
 
@@ -74,7 +75,6 @@ form{
 form fieldset legend{
     margin: 0px 10px 0px 10px;
     font-size: 1.1em;
-    color: rgb(255, 255, 255);
     text-shadow: var(--shadow);
 }
 form fieldset#info input{
@@ -89,14 +89,13 @@ form  fieldset {
     padding: 10px;
 }
 form label{
-    color: white;
     font-size: 1.1em;
     text-shadow:var(--shadow) ;
 }
 form button{
     display: block;
-    background: linear-gradient(45deg,var(--cor1),var(--cor3));
-    color: white;
+    background: linear-gradient(45deg,var(--cor0),var(--cor4));
+    color: var(--cor4);
     border: none;
     border-radius: 10px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.548);
